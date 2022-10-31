@@ -21,6 +21,9 @@ jobs:
           ls ${{ github.workspace }}
       - name: Setup Java JDK
         uses: actions/setup-java@v3.6.0
+        with: 
+          java-version: 1.8
+          
       - run: echo "🍏 This job's status is ${{ job.status }}."
         
   
