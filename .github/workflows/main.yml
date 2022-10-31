@@ -22,7 +22,7 @@ jobs:
       - name: Setup Java JDK
         uses: actions/setup-java@v3.6.0
         with: 
-          java-version: 1.8
+          java-version: 18
           distribution: zulu
       - run: echo "🍏 This job's status is ${{ job.status }}."
         
