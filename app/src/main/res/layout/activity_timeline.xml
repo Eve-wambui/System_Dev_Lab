@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Timeline">
+    tools:context=".Timeline"
+    android:background="@drawable/regbackground">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/login"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="cursive"
         android:gravity="center"
         android:text="Home feed/Timeline"
