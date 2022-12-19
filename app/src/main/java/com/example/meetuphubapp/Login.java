@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.meetuphubapp.home.DashboardActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.button.MaterialButton;
@@ -90,9 +91,10 @@ public class Login extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(AuthResult authResult) {
                                     //creating intent
-                                    Intent home = new Intent(Login.this, Timeline.class);
-                                    //starting registration activity
+                                    Intent home = new Intent(Login.this, DashboardActivity.class);
+                                    //starting dashboard activity
                                     startActivity(home);
+                                    finish();
                                 }
                             })
                             .addOnFailureListener(new OnFailureListener() {

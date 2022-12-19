@@ -113,6 +113,7 @@ public class Registration extends AppCompatActivity {
                     Intent loginpage = new Intent(Registration.this, Login.class);
                     //starting login page
                     startActivity(loginpage);
+                    finish();
                 }
             }
 
