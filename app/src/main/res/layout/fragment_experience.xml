@@ -64,4 +64,11 @@
         android:textSize="25dp"
         android:textStyle="bold" />
 
+    <include
+        android:id="@+id/login_progress"
+        layout="@layout/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
 </RelativeLayout>
